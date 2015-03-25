@@ -1,0 +1,137 @@
+/***************************
+ GOOGLE FONT: Arimo
+***************************/
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic);
+
+.container{max-width:1180px}
+#banner{max-width:1170px; margin:auto}
+#banner #mainlogo{display:inline-block; padding:12px 12px 14px 12px;}
+.row{margin-left:-25px}
+.tile{height:155px; overflow:hidden}
+.rp12 h3, .rp12 p{padding-right:12px !important}
+div[class^="col-"]{padding-right:0; padding-left:0; border-left:solid transparent 10px}
+
+.panel{background-color:#eee; border:0; padding:16px; position:relative; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0;}
+.panel.tile{}
+.panel.tile:hover{background-color:#ddd; text-decoration:none;}
+.panel.tile a{text-decoration:none;}
+.panel.tile a h4{color:#0098CA; font-size:1.6em; margin:0; padding:0}
+.panel.tile a p{font-size:1em; color:#333; margin:0; padding:0}
+.panel.tile a .panel-heading, .panel.tile a .panel-body{margin:0; padding:0}
+.tilearrow{position:absolute; width:20px; height:20px; bottom:4px; right:4px; background:transparent url("../img/v4_icons.png")0 0 no-repeat}
+.arrow-blk .tilearrow{background-position: 0 0}
+.arrow-wht .tilearrow{background-position: 0 -43px}
+.arrow-gry .tilearrow{background-position: 0 -87px}
+
+.masthead{background-color:#fff;}
+.masthead nav{z-index:99; position:absolute; width:100%; background-color:#d8d8d8; border:0}
+.masthead nav ul {max-width:1170px; margin:auto; border-left:solid 1px #fff}
+.masthead nav ul li{border-right:solid 1px #fff}
+.masthead nav ul li a{color:#000; font-size:1em; font-weight:bold; text-align:top; text-align:left; padding-bottom:36px}
+.masthead nav ul li.active a{background-color:#c4c4c4}
+.masthead nav ul li a:hover{background:#bbb}
+
+.masthead #subnav{margin-top:65px; background-color:#fff; box-shadow: 0 5px 10px #ccc}
+.masthead #subnav ul{max-width:1170px; margin:auto; padding:0}
+.masthead #subnav ul li{display:table-cell; margin:0; padding:0; border-right:solid 12px #fff}
+.masthead #subnav ul li a{color:#fff; font-weight:normal; display:block; padding:6px 10px; margin:16px 0; background-color:#555;
+    -webkit-border-radius:6px; 
+       -moz-border-radius:6px;
+            border-radius:6px
+}
+.masthead #subnav ul li a:hover{background-color:#888;}
+
+.row{margin-bottom:24px}
+
+.tile-txt{min-height:260px}
+.tile-txt a{display:block; height:100%; background-color:#eee; padding-bottom:40px}
+.tile-txt a:hover{text-decoration:none; background-color:#ddd}
+.tile-txt h3{padding:0 16px; color:#555; margin-top:8px}
+.tile-txt p{padding:0 16px; color:#555}
+.tile-txt img{width:100%}
+.tile-txt .btn{position:absolute; bottom:0; display:none}
+
+#m-menu{display:none}
+
+@media (max-width: 992px){
+    .tile-txt{min-height:0; padding-bottom:12px}
+    .rp12 h3, .rp12 p{padding-right:0 !important}
+    .tilearrow{bottom:14px}
+}
+
+@media (max-width: 767px){
+    .container{margin-top:-75px; padding-left:28px; padding-right:28px}
+    h1{font-size:1.9em}
+    h3{font-size:1.4em}
+    nav{display:none}
+    .masthead #subnav{position:absolute; width:100%; margin-top:0}
+    .masthead #subnav ul li{width:97%; margin:auto; display:block; border:0;}
+    .masthead #subnav ul li a{margin:3px 0; padding:14px}
+    .masthead #subnav #mSubDropdown{padding:0 10px 2px 10px}
+    .masthead #subnav #mSubDropdown a{color:#fff; font-weight:normal; display:block; padding:6px 10px; margin:16px 0; background-color:#555;
+    -webkit-border-radius:6px; 
+       -moz-border-radius:6px;
+            border-radius:6px
+    }
+    .masthead #subnav #mSubDropdown a span{position:absolute; right:22px; display:inline-block; width:20px; height:20px; background:transparent url("../img/v4_icons.png") 0 -134px no-repeat}
+    .masthead #subnav #mSubDropdownArrow{
+        position:absolute; 
+        border-left:16px solid transparent;
+        border-right:16px solid transparent;
+        border-top:16px solid #555; 
+        border-bottom:16px solid transparent; 
+        top:46px;
+        content: ""; display:inline-block; height:0; width:0; margin:0;}
+    
+    #m-menu{
+        background-color:#ddd;
+        z-index:100; cursor:pointer;
+        display:block; position:absolute; top:22px; right:14px; width:36px; height:32px; 
+        -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+    }
+    #m-menu .icon-bar{display:block; background-color:#555; padding:2px; margin:2px 0}
+    #m-menu:hover{background-color:#ccc}
+    
+    .masthead nav{box-shadow: 0 10px 10px #888888}
+    .masthead nav ul {border:0}
+    .masthead nav ul li{border:0; margin:0}
+    .masthead nav ul li a{color:#000; font-size:1em; border-bottom:solid 1px #fff; padding-bottom:36px; margin:0}
+    .masthead nav ul li a:hover{background:#bbb}
+    
+}
+
+/***************************
+ GENERAL STYLES
+***************************/
+* {border-color:#eee;border-style: solid;border-width: 0;zoom: 1;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+*:focus{outline: none !important;}
+html, body{height: 100%;font-family: 'Arimo', sans-serif;color: #5c5c5c;padding-top: 86px; /* Required padding for .navbar-fixed-top.  */}
+a{color:#0098CA;text-decoration: none;}
+a:hover, a:focus{color:#31c2f2; text-decoration:none}
+
+
+/***************************
+ BUTTON CUSTOMIZATIONS
+***************************/
+.btn {text-decoration: none;}
+.btn-default {color: #fff;border: 0;padding: 9px 20px;background: #0098ca;}
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default.focus, 
+.btn-default:active, 
+.btn-default.active, 
+.open>.dropdown-toggle.btn-default {
+    color: #fff;border: 0;background: #f89406
+}
+
+/***************************
+ TABS
+***************************/
+.tab-content > .active {}
+.nav-tabs.nav-justified>li>a {font-size: 1.2em}
+
+/***************************
+ FOOTER
+***************************/
+#footer{margin-top: 40px; padding:20px 0; border:0; background: #eee;}
+#footer .container{margin-top:0}

@@ -1,0 +1,49 @@
+h1{}
+h2{}
+h3{}
+
+.panel{background-color:#eee}
+.panel.tile{}
+.panel.tile:hover{background-color:#ddd}
+.panel.tile a{}
+.panel.tile a h4{color:#0098CA}
+.panel.tile a p{}
+
+.masthead{}
+.masthead nav{background-color:#d8d8d8}
+.masthead nav ul {border-left:solid 1px #fff}
+.masthead nav ul li{border-right:solid 1px #fff}
+.masthead nav ul li a{color:#000}
+.masthead nav ul li.active a{background-color:#c4c4c4}
+.masthead nav ul li a:hover{background:#bbb}
+
+.tile-txt a{background-color:#eee}
+.tile-txt a:hover{background-color:#ddd}
+.tile-txt h3{color:#555}
+.tile-txt p{color:#555}
+
+@media (max-width: 767px){
+    #m-menu{background-color:#ddd}
+    #m-menu .icon-bar{background-color:#555}
+    #m-menu:hover{background-color:#ccc}
+    .masthead nav ul li a{color:#000; border-bottom:solid 1px #fff}
+    .masthead nav ul li a:hover{background:#bbb}   
+}
+
+
+/*************************** GENERAL STYLES ***************************/
+html, body{font-family: 'Arimo', sans-serif; color:#5c5c5c}
+a{color: #0098CA}
+a:hover, a:focus{color:#31c2f2}
+
+/*************************** BUTTON ***************************/
+.btn-default {color:#fff; background:#0098ca}
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default.focus, 
+.btn-default:active, 
+.btn-default.active, 
+.open>.dropdown-toggle.btn-default{color:#fff; background:#f89406}
+
+/*************************** FOOTER ***************************/
+#footer{background: #eee}
