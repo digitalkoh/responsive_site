@@ -113,6 +113,11 @@ $(document).ready(function(){
                  $(".container").css({"margin-top" : "-75px"})
             }
         } else {
+            if($("#subnav").length){
+                $(".container").css({"margin-top" : "50px"})
+            } else {
+                $(".container").css({"margin-top" : "0px"})
+            }
             $("#mSubDropdown, #mSubDropdownArrow").hide();
             $("#subnav ul").show()
         }
